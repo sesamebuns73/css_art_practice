@@ -60,7 +60,7 @@ body {
   .astronaut {
     position: absolute;
     height: 17.5em;
-    wdith: 15.62em;
+    width: 15.62em;
     top: 7.5em;
     left: 14em;
     transform: rotate(-30deg);
@@ -204,7 +204,6 @@ body {
     background-color: #e2e9f4;
     height: 6.25em;
     width: 2.5em;
-    border-radius:;
     top: 5em;
   }
   .leg-l {

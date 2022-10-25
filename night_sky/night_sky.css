@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+.container {
+    position: absolute;
+    background-color: #113755;
+    width: 22em;
+    height: 22em;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mountains {
+    position: absolute;
+    background-color: #144569;
+    width: 8em;
+    height: 10em;
+    top: 11em;
+    left: -1em;
+    transform: rotate(45deg);
+}
+.mountains:before {
+    position: absolute;
+    content: "";
+    background-color: #144569;
+    width: 8em;
+    height: 10em;
+    left: 5em;
+    bottom: 3em;
+}
+.mountains:after {
+    position: absolute;
+    content: "";
+    background-color: #144569;
+    width: 8em;
+    height: 10em;
+    left: 11em;
+    bottom: 9.5em;
+    transform: rotate(20deg);
+}
+.ground {
+    position: absolute;
+    background-color: #041524;
+    width: 22em;
+    height: 8em;
+    top: 17em;
+    transform: rotate(3deg);
+}
+.planet {
+    position: absolute;
+    background-color: #ffffff;
+    width: 3em;
+    height: 3em;
+    top: 4em;
+    left: 5.5em;
+    border-radius: 50%;
+    box-shadow: 0 0 0  0.6em rgba(32, 105, 149, 0.6), 0 0 0 1.2em rgba(32, 105, 149, 0.5), 0 0 0 2em rgba(32, 105, 149, 0.4);
+}
+.shadow {
+    position: absolute;
+    background-color: #ebefe7;
+    width: 0.6em;
+    height: 0.6em;
+    top: 1em;
+    left: 0.5em;
+    border-radius: 50%;
+}
+.shadow:before {
+    content: "";
+    position: absolute;
+    background-color: #ebefe7;
+    width: 0.45em;
+    height: 0.45em;
+    border-radius: 50%;
+    left: 1em;
+    top: 0.5em;
+}
+.shadow:after {
+    content: "";
+    position: absolute;
+    background-color: #ebefe7;
+    width: 0.25em;
+    height: 0.25em;
+    border-radius: 50%;
+    left: 1em;
+}
+.windmill {
+    position: absolute;
+    background-color: #041524;
+    width: 1.5em;
+    height: 2.5em;
+    top: 15em;
+    left: 13em;
+    transform: rotate(3deg);
+}
+.windmill:before {
+    content: "";
+    background-color: #041524;
+    position: absolute;
+    width: 1.5em;
+    height: 1.75em;
+    bottom: 2em;
+    border-radius: 1.25em 1.25em 0 0;
+}
+.windmill:after {
+    content: "";
+    position: absolute;
+    width: 1.75em;
+    height: 0;
+    border-bottom: 0.5em solid #0b2231;
+    border-left: 0.06em solid transparent;
+    border-right: 0.06em solid transparent;
+    border-radius: 25%;
+    left: -0.17em;
+    top: -0.3em;
+    z-index: -1;
+}
+.light {
+    background-color: #8daf76;
+    position: absolute;
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    top: 0.4em;
+    left: 0.55em;
+    box-shadow: 0 0 0.06em 0.12em rgba(141, 175, 118, 0.3), 0 0 0.06em 0.25em rgba(141, 175, 118, 0.2);
+
+}
+.light:before {
+    content: "";
+    background-color: #0f304f;
+    position: absolute;
+    height: 0.5em;
+    width: 0.5em;
+    bottom: -1.29em;
+    left: -0.04em;
+    border-radius: 0.25em 0.25em 0 0;
+}
+.arms {
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    bottom: 1em;
+    left: -1.2em;
+    transform: rotate(45deg);
+    animation: spin 5s infinite linear;
+}
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.arms:before {
+    content: "";
+    background-color: #041524;
+    height: 100%;
+    width: 0.5em;
+    position: absolute;
+    left: 1.75em;
+}
+.arms:after {
+    content: "";
+    background-color: #041524;
+    height: 100%;
+    width: 0.5em;
+    position: absolute;
+    left: 1.75em;
+    transform: rotate(90deg);
+}
